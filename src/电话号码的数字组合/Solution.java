@@ -10,7 +10,7 @@ public class Solution {
 
    public static List<String> letterCombinations(String digits) {
       List<String> resList = new ArrayList<>();
-      Map<Character, String> map = new HashMap(){{
+      HashMap map = new HashMap(){{
          put('2', "abc");
          put('3', "def");
          put('4', "ghi");
