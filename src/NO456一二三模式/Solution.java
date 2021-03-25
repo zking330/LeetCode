@@ -1,4 +1,4 @@
-package 一二三模式456;
+package NO456一二三模式;
 
 /**
  * @author kai.zheng
