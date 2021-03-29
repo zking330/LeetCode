@@ -1,4 +1,4 @@
-package NO15三数之和;
+package A集合.数组.NO15三数之和;
 
 import java.util.ArrayList;
 import java.util.Arrays;
