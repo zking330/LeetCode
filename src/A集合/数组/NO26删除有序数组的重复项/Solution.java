@@ -6,6 +6,15 @@ public class Solution {
         System.out.println(removeDuplicates(nums));
     }
 
+    /**
+     * 双指针的解法
+     * @param nums int[]
+     * @return int
+     * 已经排序好的数组
+     * 只遍历一遍
+     * 计数后需要替换前面的数字，用于比对后续的值
+     * 返回i+1, 因为是从0开始计数
+     */
     public static int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
         int i = 0;
