@@ -1,4 +1,4 @@
-package 多线程;
+package 多线程.thread_basic;
 
 import java.util.concurrent.*;
 

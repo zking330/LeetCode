@@ -1,4 +1,6 @@
-package 多线程;
+package 多线程.thread_basic;
+
+import 多线程.SleepHelper;
 
 /**
  * @author kai.zheng

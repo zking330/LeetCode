@@ -1,4 +1,6 @@
-package 多线程;
+package 多线程.thread_basic;
+
+import 多线程.SleepHelper;
 
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -7,15 +9,17 @@ import java.util.concurrent.locks.ReentrantLock;
  * @className T05_Interrupt_and_isInterrupted
  * @date 2022/2/8 14:42
  */
-public class T11_Interrupt_and_lockInterruptibly {
+public class T10_Interrupt_and_lock {
     private static ReentrantLock lock = new ReentrantLock();
 
     public static void main(String[] args) {
         Thread t1 = new Thread(() -> {
             lock.lock();
-            
+
             try {
-                SleepHelper.sleepSeconds(10);
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             } finally {
                 lock.unlock();
             }
@@ -28,14 +32,11 @@ public class T11_Interrupt_and_lockInterruptibly {
         SleepHelper.sleepSeconds(1);
 
         Thread t2 = new Thread(() -> {
-            System.out.println("t2 start!");
+            lock.lock();
 
-            try {
-                //可以被打断的过程
-                lock.lockInterruptibly();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } finally {
+            try{
+
+            }finally {
                 lock.unlock();
             }
 

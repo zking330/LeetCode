@@ -1,4 +1,6 @@
-package 多线程;
+package 多线程.thread_basic;
+
+import 多线程.SleepHelper;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.LockSupport;
